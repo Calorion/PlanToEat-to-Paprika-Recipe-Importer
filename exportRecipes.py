@@ -19,6 +19,7 @@ def exportPaprikaYaml(recipes):
         item['photo'] = get_as_base64(recipes[i]['PhotoUrl'])
         item['ingredients'] = recipes[i]['Ingredients']
         item['directions'] = recipes[i]['Directions']
+        item['notes'] = recipes[i]['Private']
         items.append(item)
         newPage = floor((i/50) + 1)
         if newPage != page:
