@@ -11,8 +11,8 @@ def exportPaprikaYaml(recipes):
         item = {}
         item['name'] = recipes[i]['Title']
         item['servings'] = recipes[i]['Servings']
-        item['source'] = recipes[i]['UrlHost']
-        item['source_url'] = recipes[i]['Source']
+        item['source'] = recipes[i]['Source']
+        item['source_url'] = recipes[i]['Url']
         item['prep_time'] = recipes[i]['PrepTime']
         item['cook_time'] = recipes[i]['CookTime']
         item['categories'] = getCategories(recipes[i])
